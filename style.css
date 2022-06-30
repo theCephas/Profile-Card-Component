@@ -10,8 +10,8 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 body{
-    background: url("/images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat,
-   url("/images/bg-pattern-bottom.svg") 50vw 50vh no-repeat;
+    background: url("images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat,
+        url("images/bg-pattern-bottom.svg") 50vw 50vh no-repeat;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
 }
