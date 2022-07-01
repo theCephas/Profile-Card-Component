@@ -10,25 +10,16 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 body{
-    background-image: url("/images/bg-pattern-top.svg"),
-   url("/images/bg-pattern-bottom.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: left bottom, right top;
-    background-size: 40%;
+    background: url("/images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat,
+   url("/images/bg-pattern-bottom.svg") 50vw 50vh no-repeat;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
 }
-@media screen and(max-width: 400px){
-    body{
-        background-image: url("/images/bg-pattern-bottom.svg"),
-   url("/images/bg-pattern-top.svg");
-    background-repeat: no-repeat, no-repeat;
-    background-position: right top, left bottom;
-    background-size: 40%;
-    background-color: var(--dark-cyan);
-    }
-}
 main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 100vh;
     background-color: #fff;
     margin: 95px auto;
     width: 350px;
@@ -47,7 +38,6 @@ main{
     display: flex;
     justify-content: center;
     margin: 10px;
-    
 }
 #nme{
     font-size: 18px;
