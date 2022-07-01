@@ -10,11 +10,32 @@
     --dark-gray: hsl(0, 0%, 59%);
 }
 body{
+<<<<<<< HEAD
     background: url("/images/bg-pattern-top.svg") right 50vw bottom 40vh no-repeat,
    url("/images/bg-pattern-bottom.svg") 50vw 50vh no-repeat;
     background-color: var(--dark-cyan);
     font-family: 'Kumbh Sans', sans-serif;
 }
+=======
+    background-image: url("images/bg-pattern-top.svg"),
+   url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: left bottom, right top;
+    background-size: 40%;
+    background-color: var(--dark-cyan);
+    font-family: 'Kumbh Sans', sans-serif;
+}
+@media screen and(max-width: 400px){
+    body{
+        background-image: url("images/bg-pattern-bottom.svg"),
+   url("images/bg-pattern-top.svg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: right top, left bottom;
+    background-size: 40%;
+    background-color: var(--dark-cyan);
+    }
+}
+>>>>>>> 6567708dd4d88d5d53c42571730ac5fcfda9e81f
 main{
     display: flex;
     justify-content: center;
